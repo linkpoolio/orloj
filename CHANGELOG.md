@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- **Anthropic OAuth access tokens**: the Anthropic model gateway now sends `Authorization: Bearer` for credentials with the `sk-ant-oat` prefix (or an explicit `Bearer ` prefix), while standard API keys continue to use `x-api-key`. Same `ModelEndpoint` `auth.secretRef` works for both.
+
 ## [0.17.0] - 2026-05-26
 
 ### Added
